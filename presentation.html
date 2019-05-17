@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Présentation</title>
+		<meta name="content-language" content="fr" />
+		<meta charset= "utf-8">
+		<link rel="stylesheet" href="basique.css" />
+		<link rel="stylesheet" href="menu projet.css" />
+		<link rel="stylesheet" href="style2.css" />
+	</head>
+	
+
+
+	<body>
+
+		<header>
+			<h1>Un voyage autour du monde</h1>
+		<nav>
+			<ul class="nav">
+				<li class="dropdown"><a href="accueil.html"><b>Accueil</b></a></li>
+				<li class="dropdown"><a href="presentation.html"><b>Jouer</b></a></li>
+				<li class="dropdown"><a href="hist.html"><b>Histoire</b></a>
+					<ul class="submenu">
+						<li><a href="personnage.html">Présentation personnages</a></li>
+						<li><a href="resume.html">Résumés</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="bonus.html"><b>Bonus</b></a>
+					<ul class="submenu">
+						<li><a href="galerie.html">Galerie photos</a></li>
+						<li><a href="sondage.php">Sondage + quiz</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		</header>
+		
+		<br/>
+		
+		
+
+
+		<div id="bloc">
+
+			<div class="text">
+
+				<p>Vous avez toujours admiré votre meilleur ami Gabriel qui a visité les 4 coins du globe. <br/>
+					Cependant vous n'avez jamais osé vous lancer dans une aussi grande aventure. <br/>
+					Cela va bientôt faire une semaine que vous ne recevez plus de ses nouvelles... Que se passe-t-il ? </p>
+				
+			</div>
+
+		</div>
+		
+		<br/>
+
+		<form action='chapitre1.php' method="post">
+
+		<fieldset class="first">
+
+			<legend> <b> Choix du personnage : </b> </legend>
+
+			
+			Comment vous appelez-vous ? 
+				<input type="text" name="nom" />
+				<br/>
+
+
+			Aimez-vous voyager ? 
+			    <label >oui</label>
+			    <input type="radio" name="voyage" value="oui" />
+				
+			    <label >non</label>
+				<input type="radio" name="voyage" value="non" />
+			    <br>
+			
+			Si oui, voyagez-vous plutôt :
+
+				<select name="utilise" >
+				<option value="souvent"> Souvent</option>
+				<option value="parfois"> Parfois</option>
+				<option value="jamais"> Jamais</option>
+				</select>
+				<br/>
+				
+			Êtes vous :
+			
+	    </fieldset>
+		
+		<div id="conteneur">
+		<div class="personnage" >
+		<br><img src="fille.png" width="152" />
+		 <input type="radio" name="sexe" value="fille"/>une fille
+		</div>
+		
+		<div class="personnage" >
+		<br><img src="index.png" width="126" />
+		 <input type="radio" name="sexe" value="garçon"/>un garçon
+		</div>
+		</div>
+		
+       <br/><br/>
+	   
+		<div class="formulaire" >
+		<input type="submit" value="Continuer" />
+		<input type="reset" value="Annuler" />
+		</div>
+			
+			
+	</form>
+	
+	<br/>
+	
+	<hr/>
+	    
+	<p class="cop"><i>© Projet ISN 2019 - Mélanie et Emilie</i></p>
+	
+	
+	</body>
+
+</html>
